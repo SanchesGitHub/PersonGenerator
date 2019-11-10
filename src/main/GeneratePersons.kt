@@ -23,8 +23,6 @@ fun main() {
         return
     }
 
-    arrayPersons.forEach { println(it) }
-    val filepath = createExcel()
-
+    val filepath = createExcel(arrayPersons)
     println("Файл создан. Путь: ${filepath}")
 }
