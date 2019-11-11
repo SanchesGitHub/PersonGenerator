@@ -9,6 +9,10 @@ fun task1() {
         println("Введено не число!")
         return
     }
-    println("Вы ввели число $n")
+    printTask1(n)
 
+}
+
+fun printTask1(n: Int?) {
+    println("Вы ввели число $n")
 }

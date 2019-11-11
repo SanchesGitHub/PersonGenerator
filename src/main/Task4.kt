@@ -7,6 +7,13 @@ fun task4() {
     val listNumbers = numbers?.split(" ")
 
     val arrayNumbers: Array<Int> = Array(listNumbers!!.size) { i -> listNumbers[i].toInt() }
+    val arraySort = printTask4(arrayNumbers)
+
+    println("Новый массив: ")
+    arraySort.forEach { print("$it ") }
+}
+
+fun printTask4(arrayNumbers: Array<Int>): Array<Int> {
     val arraySort: Array<Int> = Array(arrayNumbers.size) { 0 }
 
     var positivePosition = arrayNumbers.size - 1
@@ -21,6 +28,5 @@ fun task4() {
         }
     }
 
-    println("Новый массив: ")
-    arraySort.forEach { print("$it ") }
+    return arraySort
 }

@@ -10,15 +10,20 @@ fun task2() {
         return
     }
 
+    val newNumber = printTask2(n)
+    if (newNumber.isNullOrEmpty())
+        println("Прочтение числа справо налево $newNumber")
+}
+
+fun printTask2(n: Int?): String? {
     var newNumber = ""
     if (n!! in 100..999) {
         for (i in n.toString().length - 1 downTo 0) {
-            newNumber +=n.toString()[i]
+            newNumber += n.toString()[i]
         }
     } else {
         println("Введено не трехзначное число!")
-        return
+        return null
     }
-
-    println("Прочтение числа справо налево $newNumber")
+    return newNumber
 }

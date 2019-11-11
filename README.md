@@ -1,11 +1,9 @@
-# PersonGenerator
-Генератор личностей
+# Kotlin
+Котлин
 
 Необходимые зависимости (лежат в директории dependencies):
--commons-collections4-4.1
--commons-compress-1.19
--poi-4.1.1
--saxonb9-0-0-4j
--xmlbeans-3.1.0
+- junit-jupiter-api-5.6.0-M1
+- junit-jupiter-engine-5.0.0
+- junit-platform-commons-1.6.0-M1
 
 Добавить данные зависимости в проект
