@@ -16,3 +16,4 @@ fun task1() {
 fun printTask1(n: Int?) {
     println("Вы ввели число $n")
 }
+
